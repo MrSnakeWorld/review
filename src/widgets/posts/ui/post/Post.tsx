@@ -1,8 +1,9 @@
-import {PostItem} from '@entities/post';
-import {UsernameContainer} from '@entities/user';
-import {RatePost} from '@features/rate-post';
-import {Card} from '@shared/ui';
 import {memo, useMemo} from 'react';
+import {RatePost} from '@features/rate-post';
+import {UsernameContainer} from '@entities/user';
+import { PostItem } from '@entities/post';
+import { Card, HidingContainer } from '@shared/ui';
+import { CommentItems } from '@widgets/comments/ui/comment-items/CommentsItems';
 
 interface IPostProps {
 	id: number;
@@ -19,6 +20,11 @@ export const Post = memo(({id, userId, title, body}: IPostProps) => {
 		[userId]
 	);
 
+	const props = {
+		hiddenTitle: "Показать комментарии",
+		shownTitle: 'Скрыть комментарии'
+	}
+
 	return (
 		<Card>
 			<PostItem
@@ -27,6 +33,9 @@ export const Post = memo(({id, userId, title, body}: IPostProps) => {
 				body={body}
 				title={title}
 			/>
+			<HidingContainer {...props}>
+				<CommentItems postId={id} />
+			</HidingContainer>
 		</Card>
 	);
 });

@@ -1,0 +1,9 @@
+.hiding-container {
+	cursor: pointer;
+	user-select: none;
+	padding-top: 16px;
+}
+
+.hiding-container .children {
+	padding-top: 8px;
+}

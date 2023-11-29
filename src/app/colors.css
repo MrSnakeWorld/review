@@ -1,0 +1,22 @@
+:root {
+	--link: #0e72e3;
+	--link-hover: #57a4ff;
+	--link-active: #2589ff;
+
+	--background: #eef5fb;
+	--background-line: #afb8c5;
+	--main-font-color: #172a41;
+	--sub-font-color: #3a4a5d;
+
+	--shadow: #969fa9;
+
+	--button-text: #ffffff;
+
+	--like-button: #3391FF;
+	--like-hover: #57A4FF;
+	--like-pressed: #2589FF;
+
+	--dislike-button: #FD5151;
+	--dislike-hover: #FD6666;
+	--dislike-pressed: #F73F3F;
+}

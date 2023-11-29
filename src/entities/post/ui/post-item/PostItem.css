@@ -1,0 +1,38 @@
+.post-item {
+}
+
+.post-item .post-item__header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-item .post-item__header-title__text {
+	font-size: var(--small-header);
+	font-weight: 500;
+}
+
+.post-item .post-item__header-title__user {
+	font-size: var(--small-text);
+	padding-bottom: 9px;
+	color: var(--sub-font-color);
+	position: relative;
+}
+
+.post-item .post-item__header {
+	position: relative;
+}
+
+.post-item .post-item__header::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: var(--background-line);
+	bottom: 0px;
+	left: 0;
+}
+
+.post-item .post-item__body {
+	padding-top: 8px;
+	font-size: var(--text);
+}

@@ -1,0 +1,36 @@
+.rating {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rating .rating__dislike,
+.rating .rating__like {
+	cursor: pointer;
+	padding: 4px 8px;
+	margin: 0px 4px;
+	border-radius: 8px;
+	color: var(--button-text);
+	opacity: .5;
+	user-select: none;
+}
+
+.rating .rating__dislike {
+	background-color: var(--dislike-button);
+}
+.rating .rating__dislike:hover {
+	background-color: var(--dislike-hover);
+}
+.rating .rating__dislike:active {
+	background-color: var(--dislike-pressed);
+}
+
+.rating .rating__like {
+	background-color: var(--like-button);
+}
+.rating .rating__like:hover {
+	background-color: var(--like-hover);
+}
+.rating .rating__like:active {
+	background-color: var(--like-pressed);
+}

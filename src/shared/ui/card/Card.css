@@ -1,0 +1,6 @@
+.card {
+	-webkit-box-shadow: 4px 4px 8px 0px var(--shadow);
+	-moz-box-shadow: 4px 4px 8px 0px var(--shadow);
+	box-shadow: 4px 4px 8px 0px var(--shadow);
+	padding: 8px 16px;
+}

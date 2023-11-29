@@ -1,0 +1,10 @@
+.posts-page {
+	padding: 8px 16px;
+	display: flex;
+	flex-direction: column;
+}
+
+.posts-page .posts-page__title {
+	padding: 16px 0px;
+	font-size: var(--header);
+}

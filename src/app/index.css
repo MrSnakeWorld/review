@@ -1,0 +1,32 @@
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-family: 'Open Sans', sans-serif;
+	background-color: var(--background);
+	color: var(--font-color);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+	transition: color 0.2s ease;
+	-webkit-tap-highlight-color: black;
+}
+a:hover {
+	color: var(--link-hover);
+}
+a:active {
+	color: var(--link-active) !important;
+}
+a:visited {
+}
